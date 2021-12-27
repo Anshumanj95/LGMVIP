@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="#E1F5FE"
+        app:cardCornerRadius="8dp"
+        app:cardPreventCornerOverlap="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:text="City Name"
+                    android:textAllCaps="true"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--Text view to display Active Cases-->
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Active- "
+                        android:textColor="#FFA726"
+                        android:textStyle="bold" />
+
+                    <!--Text view to display Active Cases in Numbers-->
+                    <TextView
+                        android:id="@+id/active"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="2323223 "
+                        android:textColor="@color/active"
+                        android:textStyle="bold" />
+
+                    <!--Image view to display increase in Cases -->
+                    <ImageView
+                        android:layout_width="17dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:src="@drawable/change" />
+
+                    <!--Text view to display Todays Active Cases in Numbers-->
+                    <TextView
+                        android:id="@+id/incactive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="32"
+                        android:textColor="@color/active"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--Text view to display Cured Cases -->
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Cured- "
+                        android:textColor="#FFA726"
+                        android:textStyle="bold" />
+
+                    <!--Text view to display Total Cured Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/cured"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="2323223 "
+                        android:textColor="@color/recovered"
+                        android:textStyle="bold" />
+
+                    <!--Image view to display increase in Cases -->
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/change" />
+
+                    <!--Text view to display Todays Cured Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/inccured"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="32"
+                        android:textColor="@color/recovered"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--Text view to display deths Cases -->
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="death- "
+                        android:textColor="#FFA726"
+                        android:textStyle="bold" />
+
+                    <!--Text view to display total death Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/death"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:text="2323223 "
+                        android:textColor="@color/deaths"
+                        android:textStyle="bold" />
+
+                    <!--Image view to display increase in Cases -->
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/change" />
+
+                    <!--Text view to display todays death Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/incdeath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="32"
+                        android:textColor="@color/deaths"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--Text view to display total Number of cases Cases  -->
+                    <TextView
+                        android:layout_width="107dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:text="Total- "
+                        android:textColor="#FFA726"
+                        android:textStyle="bold" />
+
+                    <!--Text view to display total Number of cases Cases in Numbers -->
+                    <TextView
+                        android:id="@+id/total"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="2323223 "
+                        android:textColor="#FF7043"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
